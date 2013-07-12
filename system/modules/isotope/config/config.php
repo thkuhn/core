@@ -124,6 +124,11 @@ $GLOBALS['ISO_MOD'] = array
     ),
     'config' => array
     (
+        'invoice_templates' => array
+        (
+            'tables'                    => array('tl_iso_invoice_templates'),
+            'icon'                        => 'system/modules/isotope/assets/invoice-templates.png'
+        ),
         'iso_mail' => array
         (
             'tables'                    => array('tl_iso_mail', 'tl_iso_mail_content'),
@@ -223,6 +228,17 @@ $GLOBALS['ISO_PRODUCT'] = array
     ),
 );
 
+
+/**
+ * Invoice templates
+ */
+$GLOBALS['ISO_INVOICETEMPLATE'] = array
+(
+    'standard' => array
+    (
+        'class'    => 'Isotope\Invoice\Standard',
+    ),
+);
 
 /**
  * Permissions are access settings for user and groups (fields in tl_user and tl_user_group)
