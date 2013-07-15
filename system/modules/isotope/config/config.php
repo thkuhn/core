@@ -230,17 +230,6 @@ $GLOBALS['ISO_PRODUCT'] = array
 
 
 /**
- * Invoice templates
- */
-$GLOBALS['ISO_INVOICETEMPLATE'] = array
-(
-    'standard' => array
-    (
-        'class'    => 'Isotope\Invoice\Standard',
-    ),
-);
-
-/**
  * Permissions are access settings for user and groups (fields in tl_user and tl_user_group)
  */
 $GLOBALS['TL_PERMISSIONS'][] = 'iso_modules';
