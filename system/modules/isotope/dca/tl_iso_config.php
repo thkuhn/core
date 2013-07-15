@@ -114,7 +114,8 @@ $GLOBALS['TL_DCA']['tl_iso_config'] = array
             {checkout_legend},billing_countries,shipping_countries,billing_fields,shipping_fields,billing_country,shipping_country,limitMemberCountries;
             {currency_legend},priceRoundPrecision,priceRoundIncrement,currency,currencyFormat,currencyPosition,currencySymbol;
             {converter_legend:hide},priceCalculateFactor,priceCalculateMode,currencyAutomator;
-            {order_legend:hide},orderPrefix,orderDigits,orderstatus_new,orderstatus_error,invoiceLogo;
+            {order_legend:hide},orderPrefix,orderDigits,orderstatus_new,orderstatus_error;
+            {documents_legend},invoiceDocument;
             {config_legend},templateGroup,cartMinSubtotal;
             {images_legend},gallery,missing_image_placeholder,imageSizes',
     ),
@@ -479,13 +480,24 @@ $GLOBALS['TL_DCA']['tl_iso_config'] = array
             'eval'                  => array('mandatory'=>true, 'includeBlankOption'=>true, 'tl_class'=>'w50'),
             'relation'              => array('type'=>'hasOne', 'load'=>'lazy'),
         ),
+        'invoiceDocument' => array
+        (
+            'label'                 => &$GLOBALS['TL_LANG']['tl_iso_config']['invoiceDocument'],
+            'exclude'               => true,
+            'filter'                => true,
+            'inputType'             => 'select',
+            'options'               => array_keys(\Isotope\Factory\Document::getClasses()),
+            'reference'             => \Isotope\Factory\Document::getClassLabels(),
+            'eval'                  => array('mandatory'=>true, 'includeBlankOption'=>true, 'tl_class'=>'w50'),
+            'relation'              => array('type'=>'hasOne', 'load'=>'lazy'),
+        ),
         'templateGroup' => array
         (
             'label'                 => &$GLOBALS['TL_LANG']['tl_iso_config']['templateGroup'],
             'exclude'               => true,
-			'inputType'             => 'select',
-			'options_callback'      => array('Isotope\tl_iso_config', 'getTemplateFolders'),
-			'eval'                  => array('includeBlankOption'=>true, 'tl_class'=>'w50'),
+            'inputType'             => 'select',
+            'options_callback'      => array('Isotope\tl_iso_config', 'getTemplateFolders'),
+            'eval'                  => array('includeBlankOption'=>true, 'tl_class'=>'w50'),
         ),
         'gallery' => array
         (

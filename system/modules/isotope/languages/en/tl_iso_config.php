@@ -59,6 +59,7 @@ $GLOBALS['TL_LANG']['tl_iso_config']['orderstatus_new']                    = arr
 $GLOBALS['TL_LANG']['tl_iso_config']['orderstatus_error']                = array('Order status on error', 'Select an order status if something goes wrong (e.g. payment).');
 $GLOBALS['TL_LANG']['tl_iso_config']['invoiceLogo']                        = array('Invoice Logo', 'Select a logo to show up on the invoices for this store.');
 $GLOBALS['TL_LANG']['tl_iso_config']['templateGroup']                    = array('Templates folder', 'Here you can select a templates folder to search before every other template folder.');
+$GLOBALS['TL_LANG']['tl_iso_config']['invoiceDocument']                    = array('Invoice document', 'Select the document responsible for the invoices here.');
 $GLOBALS['TL_LANG']['tl_iso_config']['cartMinSubtotal']                    = array('Minimum subtotal', 'The minimum cart subtotal required to order. Enter 0 to disable.');
 $GLOBALS['TL_LANG']['tl_iso_config']['gallery']                            = array('Product image gallery', 'Different image galleries can be developed to present media files in a custom style.');
 $GLOBALS['TL_LANG']['tl_iso_config']['imageSizes']                        = array('Image sizes', 'You can create custom image sizes for use in your templates. The default sizes are "gallery", "thumbnail", "medium" and "large".');
