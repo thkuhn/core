@@ -16,8 +16,8 @@
  */
 NamespaceClassLoader::add('Isotope/Model/Payment', 'system/modules/isotope/library');
 NamespaceClassLoader::add('Isotope/Model/Shipping', 'system/modules/isotope/library');
+NamespaceClassLoader::add('Isotope/Model/Document', 'system/modules/isotope/library');
 NamespaceClassLoader::add('Isotope/Gallery', 'system/modules/isotope/library');
-NamespaceClassLoader::add('Isotope/Document', 'system/modules/isotope/library');
 NamespaceClassLoader::add('Isotope', 'system/modules/isotope/library');
 
 
